@@ -93,7 +93,7 @@ def run_analysis_pipeline():
     """
     Executes the full analysis pipeline: Load model -> Predict -> Log -> Save Artifacts.
     """
-    model_path = 'runs/detect/shelf_model/weights/best.pt'
+    model_path = 'best.pt'
     try:
         model = YOLO(model_path)
     except:
