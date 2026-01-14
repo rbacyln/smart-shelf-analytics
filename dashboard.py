@@ -93,7 +93,7 @@ def run_analysis_pipeline():
     """
     Executes the full analysis pipeline: Load model -> Predict -> Log -> Save Artifacts.
     """
-    model_path = 'best.pt'
+    model_path = 'yolov8n.pt'
     try:
         model = YOLO(model_path)
     except:
