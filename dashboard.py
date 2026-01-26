@@ -9,6 +9,11 @@ Date: 2026-01-14
 """
 
 import streamlit as st
+st.set_page_config(
+    page_title="Smart Shelf Analytics",
+    page_icon="🛒",
+    layout="wide"
+)
 import sqlite3
 import pandas as pd
 import os
