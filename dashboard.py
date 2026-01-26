@@ -10,9 +10,10 @@ Date: 2026-01-14
 
 import streamlit as st
 st.set_page_config(
-    page_title="Smart Shelf Analytics",
+    page_title="ShelfGuard AI | Enterprise",  
     page_icon="🛒",
-    layout="wide"
+    layout="wide",
+    initial_sidebar_state="expanded"          
 )
 import sqlite3
 import pandas as pd
@@ -25,13 +26,6 @@ import datetime
 from ultralytics import YOLO
 from fpdf import FPDF
 
-# Page Config
-st.set_page_config(
-    page_title="ShelfGuard AI | Enterprise",
-    page_icon="🛒",
-    layout="wide",
-    initial_sidebar_state="expanded"
-)
 
 # Custom Styling
 st.markdown("""
